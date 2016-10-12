@@ -55,6 +55,37 @@ ul {
     zoom: 1;
 }
 
+/* ======================== Header =======================*/
+header {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    padding-top: 1%;
+}
+
+
+header .rowContacts p {
+    font: 14px 'OpenSansBold';
+    color: #fff;
+}
+
+header .rowContacts .phone {
+    text-align: right;
+}
+
+header .rowContacts .email p {
+    font: 14px 'MyriadProBold';
+}
+/* ======================== The End Header =======================*/
+
+
+/* ======================== Section Main =======================*/
+section#main {
+    background: url("../img/background-main.jpg");
+    height: 600px;
+    background-size: cover;
+}
+/* ======================== The End Main =======================*/
 
 /* ======================== Section Products =======================*/
 section#products {
@@ -98,7 +129,7 @@ section#products .hovereffect>img {
 }
 
 section#products .hovereffect .overlay img {
-    webkit-transition:all .2s ease-in-out;
+    -webkit-transition:all .2s ease-in-out;
     transition:all .2s ease-in-out;
 
 
@@ -140,8 +171,9 @@ section#products  ul li p.size span {
 }
 
 section#products  ul li p.price {
-    font-family: 'OpenSansExtraBold';
+    font: 1rem 'OpenSansExtraBold';
     color: #000;
+    margin-bottom: 3px;
 }
 section#products  ul li a {
     text-decoration: none;
@@ -180,3 +212,8 @@ section#products .load-more p:after {
     margin: 1px auto;
 
 }
+
+
+/* =============End section products =================*/
+
+
