@@ -1,0 +1,77 @@
+html, body {
+    font-size: 16px;
+}
+
+.body {
+    padding-right: 0 !important;
+}
+
+.padding {
+    padding: 0;
+}
+
+
+h2 {
+    color: #000;
+    font: 2.8rem 'OpenSansBold', sans-serif;
+    text-align: center;
+    padding: 0 0 3% 0;
+    margin: 0;
+}
+
+h2:before {
+    display: inline-block;
+    margin: 0 30px 11px 0;
+    height: 2px;
+    content: '';
+    width: 70px;
+    background: #ffd20d;
+}
+
+h2:after {
+    display: inline-block;
+    margin: 0 0 11px 30px;
+    height: 2px;
+    content: '';
+    width: 70px;
+    background: #ffd20d;
+}
+
+ul {
+    list-style: none;
+}
+
+/*============ Clearfix=========== */
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clrearfix {
+    zoom: 1;
+}
+
+
+/* ======================== Section Products =======================*/
+section#products {
+    background: #fff;
+    padding-top: 5%;
+}
+
+section#products  ul li p {
+    margin-bottom: 0;
+}
+section#products  ul li p.name-product {
+    font: 1rem 'OpenSansRegular', sans-serif;
+    color: #969696;
+}
+
+section#products  ul li p.name-product:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #000;
+}
