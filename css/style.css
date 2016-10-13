@@ -61,6 +61,10 @@ header {
     position: absolute;
     width: 100%;
     background: transparent;
+    z-index: 10;
+}
+
+header .rowContacts {
     padding-top: 25px;
 }
 
@@ -111,9 +115,33 @@ header .rowContacts .topContacts a:nth-child(5):before {
     padding-right: 30px;
 }
 
-header .rowMenu .navMenu {
-
+header .rowMenu {
+    min-height: 85px;
 }
+
+header .rowMenu .logo img {
+    padding-left: 40px;
+}
+header .rowMenu  .navMenu {
+    padding-top: 20px;
+}
+
+header .rowMenu  .navMenu .icon-menu {
+    display: none;
+    height: 33px;
+    width: 37px;
+    float: right;
+    padding: 5px;
+    cursor: pointer;
+}
+
+header .rowMenu  .navMenu .icon-menu .divide {
+    display: block;
+    height: 2px;
+    margin: 3px 0 4px 0;
+    background: #ffd20d;
+}
+
 header .rowMenu .navMenu li {
     display: inline-block;
     padding-right: 30px;
@@ -122,6 +150,24 @@ header .rowMenu .navMenu li a {
     color: #fff;
     font: 14px/18px 'OpenSansSemiBold';
 }
+
+header .rowMenu .navMenu li a:active,
+header .rowMenu .navMenu li a.active {
+    text-decoration: none;
+}
+
+header .rowMenu .navMenu li a:focus {
+    outline: none;
+}
+header .rowMenu .navMenu li a.active:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #ffd20d;
+    display: block;
+    margin: 1px auto;
+}
+
 header .rowMenu .navMenu li a:hover {
     text-decoration: none;
 }
@@ -133,6 +179,75 @@ header .rowMenu .navMenu li a:hover:after {
     display: block;
     margin: 1px auto;
 }
+
+/******** Media *********/
+@media (max-width: 991px) {
+
+    header .rowMenu {
+        max-height: 40px;
+    }
+    header .rowMenu .navMenu .icon-menu {
+        display: block;
+        border: 2px solid #ffd20d;
+        border-radius: 3px;
+        background: #fffcff;
+    }
+
+    header .rowMenu  .navMenu ul.sidebar {
+        position: fixed;
+        top: 0;
+        padding-top: 20px;
+        height: 100%;
+        width: 190px;
+        max-width: 100%;
+        box-shadow: 0 0 7px -1px rgba(0, 0, 0, 0.1);
+        background: #fff;
+        right: -200px;
+        transition: all 1s ease-in-out;
+    }
+
+    header .rowMenu  .navMenu ul.sidebar li {
+        display: block;
+        padding-top: 10px;
+    }
+
+    header .rowMenu  .navMenu ul.sidebar li a {
+        display: block;
+        color: #000;
+        text-transform: uppercase;
+    }
+
+    header .rowMenu  .navMenu ul.sidebar li a.active {
+        color: #ffd20d;
+    }
+
+    header .rowMenu .navMenu li a.active:after {
+        content: '';
+        display: none;
+    }
+
+    header .rowMenu .navMenu li a:hover:after{
+        content: '';
+        display: none;
+    }
+
+    header .rowMenu  .navMenu .sidebar.active {
+        right: 0;
+    }
+
+    header .rowMenu  .navMenu .overlay-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.6);
+        display: none;
+    }
+}
+/****** End Media*******/
+
 /* ======================== The End Header =======================*/
 
 
