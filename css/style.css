@@ -7,7 +7,8 @@ html, body {
 }
 
 .padding {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 
@@ -60,21 +61,77 @@ header {
     position: absolute;
     width: 100%;
     background: transparent;
-    padding-top: 1%;
+    padding-top: 25px;
 }
 
-
-header .rowContacts p {
+header .rowContacts span {
     font: 14px 'OpenSansBold';
-    color: #fff;
+    color: #bebebe;
+    padding-right: 20px;
 }
 
-header .rowContacts .phone {
-    text-align: right;
-}
 
-header .rowContacts .email p {
+header .rowContacts  span:before {
+    content: '\f095';
+    font-family: fa;
+    color: #ffd20d;
+    padding-right: 6px;
+    display: inline-block;
+    margin-top: 5px;
+}
+header .rowContacts a.email{
     font: 14px 'MyriadProBold';
+    text-decoration: none;
+    color: #bebebe;
+    padding-right: 35px;
+}
+
+header .rowContacts a.email:before{
+    content: '\f0e0';
+    font-family: fa;
+    color: #ffd20d;
+    padding-right: 9px;
+}
+
+header .rowContacts a:before {
+    font-family: fa;
+    color: #ffd20d;
+    padding-right: 20px;
+}
+header .rowContacts .topContacts a:nth-child(3):before {
+    content: '\f189 ';
+
+}
+header .rowContacts .topContacts a:nth-child(4):before {
+    content: '\f09a';
+}
+
+header .rowContacts .topContacts a:nth-child(5):before {
+    content: '\f16d';
+    padding-right: 30px;
+}
+
+header .rowMenu .navMenu {
+
+}
+header .rowMenu .navMenu li {
+    display: inline-block;
+    padding-right: 30px;
+}
+header .rowMenu .navMenu li a {
+    color: #fff;
+    font: 14px/18px 'OpenSansSemiBold';
+}
+header .rowMenu .navMenu li a:hover {
+    text-decoration: none;
+}
+header .rowMenu .navMenu li a:hover:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #ffd20d;
+    display: block;
+    margin: 1px auto;
 }
 /* ======================== The End Header =======================*/
 
@@ -82,8 +139,9 @@ header .rowContacts .email p {
 /* ======================== Section Main =======================*/
 section#main {
     background: url("../img/background-main.jpg");
-    height: 600px;
+    height: 100vh;
     background-size: cover;
+
 }
 /* ======================== The End Main =======================*/
 
