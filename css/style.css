@@ -256,8 +256,44 @@ section#main {
     background: url("../img/background-main.jpg");
     height: 100vh;
     background-size: cover;
+}
+section#main .head {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 42vh;
 
 }
+
+section#main .head h1 {
+    text-transform: uppercase;
+    font: 2.8rem 'OpenSansBold';
+    color: #fff;
+    max-width: 45%;
+    margin: 0 auto;
+}
+
+section#main .head h1 span {
+    color: #ffd20d;
+}
+
+section#main .head a {
+    position: relative;
+    top: 5vh;
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid #ffd20d;
+    border-radius: 35px;
+    color: #fff;
+    font: 18px 'OpenSansSemiBold';
+    padding: 12px 25px;
+}
+
+section#main .head a:hover {
+    color: #000;
+    background: #ffd20d;
+}
+
 /* ======================== The End Main =======================*/
 
 /* ======================== Section Products =======================*/
