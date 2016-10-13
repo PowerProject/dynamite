@@ -295,7 +295,7 @@ section#main .head a:hover {
 }
 
 
-/* ======================== The End Main ====================*/
+/* ======================== The End section Main ====================*/
 
 /* ======================== Section Why =======================*/
 section#why {
@@ -333,7 +333,7 @@ section#why .content-advantages .row:nth-child(3)>p#description-exclusive {
 }
 
 
-    /* ======================== The End Why =================*/
+/* ======================== The End section Why =================*/
 
 
 /* ======================== Section Shares =======================*/
@@ -348,7 +348,7 @@ section#shares h2:after {
     background: #000;
 }
 
-/* ======================== The End Shares =================*/
+/* ======================== The End section Shares =================*/
 
 /* ======================== Section Products =======================*/
 section#products {
@@ -476,7 +476,72 @@ section#products .load-more p:after {
 
 }
 
+/* =============The End section products =================*/
 
-/* =============End section products =================*/
+/* =============Section Help =================*/
+section#help {
+    padding-top: 4%;
+    background: #212121;
+    padding-bottom: 3%;
+}
 
+section#help .left-help {
+
+}
+
+section#help .left-help h3 {
+    color: #fefefe;
+    font: 1.7rem 'OpenSansBold';
+}
+
+section#help .left-help p {
+    color: #fefefe;;
+    font: 1.25rem 'OpenSansRegular';
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+section#help .right-form {
+    border: 2px solid #ffd20d;
+    border-radius: 5px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    max-width: 350px;
+}
+
+section#help  form input {
+    height: 55px;
+    width: 85%;
+    margin: 0 auto 20px;
+    color: #000;
+    font: 1rem 'OpenSansRegular';
+}
+
+section#help  form button {
+    background: #ffd20d;
+    padding: 12px 25px;
+    color: #000;
+    border-radius: 30px;
+    border:none;
+    display: block;
+    margin: 30px auto 0;
+    font: 1.1rem 'OpenSansSemiBold';
+    width: 45%;
+}
+
+section#help  form .form-group {
+    margin-bottom: 20px;
+}
+
+.form-control::-moz-placeholder {
+    font: 1rem/2.3rem 'OpenSansRegular';
+    color: #969696;
+    padding-top: 15px;
+}
+
+.form-control:focus {
+    border-color: #ffd20d;
+
+/* =============The End section help =================*/
 
