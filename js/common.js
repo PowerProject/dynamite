@@ -46,7 +46,7 @@ $(document).ready(function() {
     /*  =========== Scroll ============*/
     $(window).scroll(function() {
         var ww=$(window).width();
-        if ($(window).scrollTop() > $('#products').offset().top-60) {
+        if ($(window).scrollTop() > $('#why').offset().top-60) {
             $('header').css('position', 'fixed');
             $('.rowContacts').css('display', 'none');
             $('header .rowMenu .navMenu').css('padding-top', '33px');

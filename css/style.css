@@ -542,6 +542,114 @@ section#help  form .form-group {
 
 .form-control:focus {
     border-color: #ffd20d;
-
+}
 /* =============The End section help =================*/
 
+/* =============Section Contacts =================*/
+section#contacts {
+    background: #f6f5f1;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+
+
+section#contacts .right-bracket img {
+    float: right;
+}
+
+section#contacts .social {
+
+}
+
+section#contacts  .social p {
+    font: 1.25rem 'OpenSansRegular';
+    color: #000;
+    padding-right: 20px;
+}
+
+
+section#contacts  .social  p:before {
+    content: '\f095';
+    font-family: fa;
+    color: #969696;
+    padding-right: 10px;
+    display: inline-block;
+    margin-top: 5px;
+}
+section#contacts  .social p.email{
+    font: 1.25rem 'OpenSansRegular';
+    color: #000;
+    padding-right: 35px;
+    padding-bottom: 4%;
+}
+
+section#contacts .social p.email:before{
+    content: '\f0e0';
+    font-family: fa;
+    color: #969696;
+    padding-right: 12px;
+}
+section#contacts  .social a {
+    padding-top: 30px;
+}
+
+section#contacts  .social a:before {
+    font-family: fa;
+    color: #000;
+    padding-right: 40px;
+    font-size: 1.8rem;
+}
+section#contacts  .social  a:nth-child(3):before {
+    content: '\f189 ';
+
+}
+section#contacts  .social  a:nth-child(4):before {
+    content: '\f09a';
+}
+
+section#contacts  .social  a:nth-child(5):before {
+    content: '\f16d';
+    padding-right: 30px;
+}
+
+section#contacts .questions {
+    padding-top: 2%;
+}
+
+section#contacts .questions p:first-child {
+    color: #000;
+    font: 1.7rem 'OpenSansBold';
+    padding-bottom: 6px;
+}
+
+section#contacts .questions p:nth-child(2) {
+    color: #646464;
+    font: 1rem 'OpenSansRegular';
+}
+
+section#contacts  form input {
+    height: 55px;
+    width: 30%;
+    color: #000;
+    font: 1rem 'OpenSansRegular';
+   
+}
+
+section#contacts  form button {
+    background: #ffd20d;
+    padding: 12px 25px;
+    color: #000;
+    border-radius: 30px;
+    border:none;
+    display: block;
+    margin: 30px auto 0;
+    font: 1.1rem 'OpenSansSemiBold';
+    width: 45%;
+}
+
+section#contacts form .form-group {
+    margin-bottom: 20px;
+}
+
+/* =============The End section contacts =================*/
