@@ -294,7 +294,61 @@ section#main .head a:hover {
     background: #ffd20d;
 }
 
-/* ======================== The End Main =======================*/
+
+/* ======================== The End Main ====================*/
+
+/* ======================== Section Why =======================*/
+section#why {
+    background: #fff;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+section#why .textCenter p {
+    color: #000;
+    font: 16px 'OpenSansRegular', sans-serif;
+    padding-bottom: 30px;
+}
+section#why .content-advantages .row {
+
+}
+
+section#why .content-advantages .row>img {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+section#why .content-advantages .row>p {
+    font: 20px 'OpenSansRegular';
+    color: #000;
+    padding-bottom: 20px;
+}
+section#why .content-advantages .row:nth-child(3)>p{
+    padding-bottom: 0;
+}
+
+section#why .content-advantages .row:nth-child(3)>p#description-exclusive {
+    font: 16px 'OpenSansRegular';
+    color: #646464;
+}
+
+
+    /* ======================== The End Why =================*/
+
+
+/* ======================== Section Shares =======================*/
+section#shares {
+    background: #ffd20d;
+    padding-top: 5%;
+    height: 90vh;
+}
+section#shares h2:before,
+section#shares h2:after {
+    content: '';
+    background: #000;
+}
+
+/* ======================== The End Shares =================*/
 
 /* ======================== Section Products =======================*/
 section#products {
