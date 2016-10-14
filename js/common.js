@@ -4,8 +4,7 @@ $(document).ready(function() {
 
 
     // SideBar
-
-    $('.icon-menu').on('click',function() {
+         $('.icon-menu').on('click',function() {
         $('.sidebar').toggleClass('active');
         $('.navMenu .overlay-sidebar').css('display', 'block');
       
@@ -14,12 +13,8 @@ $(document).ready(function() {
     $(".overlay-sidebar, a").click(function(e) {
         $('.sidebar').removeClass('active');
         $(".overlay-sidebar").css({"display":"none"});
-
-
-
     });
     //  End SideBar
-
 
 
     /* Anchor scroll*/
@@ -35,8 +30,18 @@ $(document).ready(function() {
         return false;
     });
 
+
+
+
+
+   //parameters in Modal
+
     $('#products ul li a').on('click', function() {
         $(this).attr({'data-target':'#myModal', 'data-toggle':'modal'});
+        var priceProduct=$(this).parent('li').find('p.price').text();
+        var nameProduct=$(this).parent('li').find('p.name-product').text();
+        $('#price-modal').text(priceProduct);
+        $('#product-modal').text(nameProduct);
     });
 
 
@@ -89,8 +94,6 @@ $(document).ready(function() {
 
             }
         });
-
-
 
     });
 
