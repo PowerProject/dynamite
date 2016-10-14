@@ -46,6 +46,26 @@ h2:after {
     background: #ffd20d;
 }
 
+@media (max-width: 991px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 500px) {
+    h2 {
+        font-size: 1.4rem;
+    }
+    h2:before {
+        content: '';
+        display: none;
+    }
+
+    h2:after {
+        content: '';
+        display: none;
+    }
+}
+
 ul {
     list-style: none;
 }
@@ -152,7 +172,7 @@ header .rowMenu  .navMenu .icon-menu .divide {
 
 header .rowMenu .navMenu li {
     display: inline-block;
-    padding-right: 30px;
+    padding-right: 29px;
 }
 header .rowMenu .navMenu li a {
     color: #fff;
@@ -166,6 +186,7 @@ header .rowMenu .navMenu li a.active {
 
 header .rowMenu .navMenu li a:focus {
     outline: none;
+    text-decoration: none;
 }
 header .rowMenu .navMenu li a.active:after {
     content: '';
@@ -190,9 +211,15 @@ header .rowMenu .navMenu li a:hover:after {
 
 /******** Media *********/
 @media (max-width: 991px) {
-
+    header .rowMenu .logo img {
+        padding-left: 10px;
+    }
     header .rowMenu {
         max-height: 40px;
+    }
+    header .rowMenu  .navMenu {
+        padding-top: 10px;
+        padding-right: 40px;
     }
     header .rowMenu .navMenu .icon-menu {
         display: block;
@@ -261,7 +288,7 @@ header .rowMenu .navMenu li a:hover:after {
 
 /* ======================== Section Main =======================*/
 section#main {
-    background: url("../img/background-main.jpg");
+    background: url("../img/background-main.jpg") top center;
     height: 100vh;
     background-size: cover;
 }
@@ -302,6 +329,20 @@ section#main .head a:hover {
     background: #ffd20d;
 }
 
+@media (min-width:992px) and (max-width:1199px) {
+    section#main .head h1 {
+        font-size: 2rem;
+        max-width: 90%;
+    }
+}
+
+@media (max-width:991px) {
+    section#main .head h1 {
+        font-size: 1.5rem;
+        max-width: 90%;
+    }
+}
+
 
 /* ======================== The End section Main ====================*/
 
@@ -327,7 +368,7 @@ section#why .content-advantages .row>img {
 }
 
 section#why .content-advantages .row>p {
-    font: 20px 'OpenSansRegular';
+    font: 1.25rem 'OpenSansRegular';
     color: #000;
     padding-bottom: 20px;
 }
@@ -338,6 +379,25 @@ section#why .content-advantages .row:nth-child(3)>p{
 section#why .content-advantages .row:nth-child(3)>p#description-exclusive {
     font: 16px 'OpenSansRegular';
     color: #646464;
+}
+
+@media (max-width: 1199px) {
+    section#why .content-advantages .row>p {
+        font-size: 1rem;
+    }
+    section#why .content-advantages .row>img {
+        padding-top: 0px;
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 991px) {
+    section#why .textCenter p {
+        font-size: 14px;
+    }
+    section#why .content-advantages .row:nth-child(3)>p#description-exclusive {
+        font-size: 14px;
+    }
 }
 
 
@@ -413,6 +473,9 @@ section#products .hovereffect .overlay img:hover {
 
 }
 
+section#products  ul {
+    padding-left: 0;
+}
 section#products  ul li {
     margin-bottom: 15px;
 }
@@ -485,6 +548,28 @@ section#products .load-more p:after {
 
 }
 
+@media (max-width: 767px) {
+    section#products  ul li {
+        text-align: center;
+    }
+    section#products .hovereffect img {
+        margin: 0 auto;
+    }
+    section#products .hovereffect .overlay {
+        padding-top: 27%;
+    }
+
+}
+
+@media (max-width: 991px) {
+    section#products .load-more p {
+        font-size: 1rem;
+    }
+    section#products .load-more p:after {
+        content: '';
+        display: none;
+    }
+}
 /* =============The End section products =================*/
 
 /* =============Section Delivery =================*/
@@ -567,7 +652,38 @@ section#delivery .rowServicesDelivery div:first-child {
     padding-top: 5%;
 }
 
-    /* =============The End section delivery =================*/
+@media (max-width: 991px) {
+    section#delivery .point p {
+        font-size: 1rem;
+    }
+    section#delivery .point1 img,
+    section#delivery .point3 img{
+        margin: 0 auto;
+    }
+
+    section#delivery .rowPoint3,
+    section#delivery .rowPoint4-5 {
+        padding-top: 15px;
+    }
+
+    section#delivery .point {
+        padding-top: 15px;
+    }
+    section#delivery .point2 p {
+        padding-top: 17px;
+    }
+
+    section#delivery .point2-3 img {
+        margin: 0 auto;
+        padding-top: 15px;
+    }
+    section#delivery .rowPoint4-5 .point4 p:last-child,
+    section#delivery .rowPoint4-5 .point5 p:last-child {
+        font-size: 14px;
+    }
+}
+
+/* =============The End section delivery =================*/
 
 /* =============Section Help =================*/
 section#help {
@@ -630,10 +746,27 @@ input::-moz-placeholder {
     color: #969696;
 }
 
-
-
 .form-control:focus {
     border-color: #ffd20d;
+}
+
+@media (max-width: 991px) {
+    section#help .left-help h3 {
+        font-size: 1.4rem;
+    }
+    section#help .left-help p {
+        font-size: 1rem;
+        width: 100%;
+    }
+    section#help .right-form {
+        max-width: 100%;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    section#help form button {
+        width: 55%;
+    }
 }
 /* =============The End section help =================*/
 
@@ -684,6 +817,7 @@ section#contacts .social p.email:before{
 }
 section#contacts  .social a {
     padding-top: 30px;
+    text-decoration: none;
 }
 
 section#contacts  .social a:before {
@@ -765,12 +899,46 @@ section#contacts form .form-control:focus {
     box-shadow: none;
 }
 
+@media (max-width: 1400px) {
+    section#contacts .social p.email {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 1199px) {
+    section#contacts div.padding-right {
+        padding-left: 0;
+    }
+
+    section#contacts div.padding-left {
+        padding-right: 0;
+    }
+    section#contacts  form button {
+        width: 44%;
+    }
+}
+
+@media (max-width: 767px) {
+    section#contacts  form button {
+        width: 90%;
+        font-size: 14px;
+    }
+    section#contacts .social p,
+    section#contacts .social p.email{
+        padding-right: 0;
+    }
+    section#contacts .questions p:first-child {
+        font-size: 1.2rem;
+    }
+}
+
 /* =============The End section contacts =================*/
 
 
 /* ================Modal================================*/
 #myModal {
     background: rgba(24,23,23,0.9);
+    padding-right: 0px !important;
 }
 #myModal form input {
     height: 55px;
@@ -849,4 +1017,33 @@ section#contacts form .form-control:focus {
 body.modal-open {
     padding-right: 0 !important;
     overflow: auto;
+}
+
+@media (max-width: 991px) {
+    #myModal .modal-dialog {
+        width: 50%;
+        margin: 9% auto;
+    }
+    #myModal .modal-footer div:last-child {
+        padding: 10px 0;
+    }
+    #myModal  form input {
+        height: 40px;
+    }
+    #myModal input::-moz-placeholder {
+        font: 14px/28px 'OpenSansRegular';
+    }
+}
+
+@media (max-width: 650px) {
+    #myModal .modal-dialog {
+        width: 90%;
+        margin: 5% auto;
+    }
+    #myModal .modal-header h4 {
+        font-size: 1.2rem;
+    }
+    #myModal  form button{
+        font-size: 1rem;
+    }
 }
