@@ -137,7 +137,7 @@
                     <p class="name-product">Бразильский цветной топ</p>
                     <p class="size">Размеры:<span> S, M</span></p>
                     <p class="price">$52.72</p>
-                    <a href="modal">Купить</a>
+                    <a href="modal" data-toggle="modal" data-target="#myModal">Купить</a>
                 </li>
                 <li class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
                     <div class="hovereffect">
@@ -336,7 +336,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 padding-right">
-                        <textarea class="form-control" rows="4" name="text-message" placeholder="Текст ссобщения"></textarea>
+                        <textarea class="form-control" rows="4" name="text-message" placeholder="Текст собщения"></textarea>
                     </div>
                     <div class="col-lg-3"></div>
                     <div class="col-lg-12">
@@ -350,6 +350,44 @@
 
     </section>
 <!-- ==================== The End Section Contacts========================= -->
+
+<!-- ==================== MODAL ========================= -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title" id="myModalLabel">Оформление заказа</h4>
+                <p id="product-modal">Бразильский цветной топ</p>
+                <p id="price-modal">$99.49</p>
+            </div>
+            <form role="form">
+                <div class="modal-body">
+                        <div class="form-group">
+                        <input type="text" required class="form-control" id="name-buy" name="name-buy" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel"  required class="form-control" id="tel-buy" name="tel-buy" placeholder="Номер телефона">
+                    </div>
+                    <div class="form-group">
+                        <input type="email"  required class="form-control" id="email-buy" name="email-buy" placeholder="Email">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-md-6 padding">
+                        <button type="submit" class="btn btn-default">Оформить</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button id="cancel-buy" type="submit" class="btn btn-default" data-dismiss="modal">Отмена</button>
+                    </div>
+
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- ==================== The End Modal========================= -->
+
 
 
 </body>

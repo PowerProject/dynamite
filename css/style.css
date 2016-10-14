@@ -683,3 +683,82 @@ section#contacts form .form-control:focus {
 }
 
 /* =============The End section contacts =================*/
+
+
+/* ================Modal================================*/
+#myModal {
+    background: rgba(24,23,23,0.9);
+}
+#myModal form input {
+    height: 55px;
+    width: 90%;
+    margin: 0 auto 15px;
+    color: #000;
+    font: 1rem 'OpenSansRegular';
+}
+
+#myModal .modal-dialog {
+    margin-top: 12%;
+    width: 400px;
+}
+
+#myModal .modal-content {
+    background: #dfdcd2;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+#myModal .modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+#myModal .modal-header h4 {
+    font: 1.6rem 'OpenSansSemiBold';
+    color: #000;
+}
+#myModal .modal-header p#product-modal {
+    font: 1rem 'OpenSansRegular';
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+#myModal .modal-header p#price-modal {
+    font: 1rem 'OpenSansExtraBold';
+}
+#myModal .modal-footer {
+    border-top: none;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 0;
+}
+
+#myModal  form button {
+    background: #ffd20d;
+    padding: 10px 25px;
+    color: #000;
+    border-radius: 30px;
+    border:none;
+    font: 1.1rem 'OpenSansSemiBold';
+    width: 100%;
+    min-width: 150px;
+}
+
+#myModal  form button#cancel-buy {
+    background: transparent;
+    border: 2px solid #ffd20d;
+}
+
+#myModal  form button#cancel-buy:hover {
+    background: #ffd20d;
+    color: #000;
+}
+
+#myModal  form .form-group {
+    margin-bottom: 16px;
+}
+
+#myModal form .form-control:focus {
+    border: 2px solid #ffd20d;
+    box-shadow: none;
+}
