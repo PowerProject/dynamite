@@ -487,6 +487,88 @@ section#products .load-more p:after {
 
 /* =============The End section products =================*/
 
+/* =============Section Delivery =================*/
+section#delivery {
+    padding-top: 5%;
+    background: #f6f5f1;
+}
+
+section#delivery .point p {
+    font: 1.25rem 'OpenSansRegular';
+    color: #000;
+    padding-top: 5px;
+}
+
+section#delivery .point1:after {
+    content: '';
+    display: block;
+    background: url("../img/delivery/path1.png") no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+section#delivery .point1 img:last-child {
+    padding-left: 20%;
+}
+section#delivery .point2 img{
+    margin: 0 auto;
+    padding-top: 19px;
+}
+
+section#delivery .rowPoint2 div:last-child img {
+    position: absolute;
+    padding-left: 36%;
+    margin-top: -4%;
+}
+section#delivery .point2-2 {
+    padding-left: 6%;
+}
+
+section#delivery .point2-1 {
+    padding-right: 6%;
+}
+section#delivery .point2-1 img {
+    margin: 0 0 1px auto;
+}
+section#delivery .rowPoint3 {
+    padding-top: 9%;
+}
+
+section#delivery .rowPoint3  div:last-child>img {
+    position: absolute;
+    padding-left: 23%;
+}
+
+section#delivery .rowPoint4-5 {
+    padding-top: 11%;
+}
+
+section#delivery .rowPoint4-5 .point4 img,
+section#delivery .rowPoint4-5 .point5 img {
+    margin: 0 auto;
+}
+section#delivery .rowPoint4-5 div:nth-child(2)>img {
+    position: absolute;
+    margin-left: -3%;
+    margin-top: -1%;
+}
+
+section#delivery .rowPoint4-5 .point4 p:last-child,
+section#delivery .rowPoint4-5 .point5 p:last-child {
+    font: 1rem 'OpenSansRegular';
+    color: #646464;
+}
+section#delivery .rowPoint4-5 .point5 p:last-child {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section#delivery .rowServicesDelivery div:first-child {
+    padding-top: 5%;
+}
+
+    /* =============The End section delivery =================*/
+
 /* =============Section Help =================*/
 section#help {
     padding-top: 4%;
