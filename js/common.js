@@ -35,6 +35,10 @@ $(document).ready(function() {
         return false;
     });
 
+    $('#products ul li a').on('click', function() {
+        $(this).attr({'data-target':'#myModal', 'data-toggle':'modal'});
+    });
+
 
 
     /*  =========== Resize ============*/

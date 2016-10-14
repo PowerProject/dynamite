@@ -2,7 +2,7 @@ html, body {
     font-size: 16px;
 }
 
-.body {
+body {
     padding-right: 0 !important;
 }
 
@@ -456,6 +456,7 @@ section#products  ul li a {
     border: 2px solid #ffd20d;
     transition: background 0.1s ease-in-out;
     -webkit-transition: background 0.1s ease-in-out;
+    cursor: pointer;
 
 }
 
@@ -761,4 +762,9 @@ section#contacts form .form-control:focus {
 #myModal form .form-control:focus {
     border: 2px solid #ffd20d;
     box-shadow: none;
+}
+
+body.modal-open {
+    padding-right: 0 !important;
+    overflow: auto;
 }
