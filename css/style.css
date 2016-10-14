@@ -642,7 +642,7 @@ section#contacts  form {
 }
 
 section#contacts  form input {
-    height: 55px;
+    height: 52px;
     width: 100%;
     color: #000;
     font: 1rem 'OpenSansRegular';
@@ -668,13 +668,13 @@ section#contacts  form button {
     border-radius: 30px;
     border:none;
     display: block;
-    margin: 30px auto 0;
+    margin: 15px auto 0;
     font: 1.1rem 'OpenSansSemiBold';
-    width: 45%;
+    width: 27%;
 }
 
 section#contacts form .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 section#contacts form .form-control:focus {
