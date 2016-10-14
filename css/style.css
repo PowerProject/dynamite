@@ -11,6 +11,14 @@ html, body {
     padding-right: 0;
 }
 
+.padding-left {
+    padding-left: 0;
+}
+
+.padding-right {
+    padding-right: 0;
+}
+
 
 h2 {
     color: #000;
@@ -531,14 +539,15 @@ section#help  form button {
 }
 
 section#help  form .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
-.form-control::-moz-placeholder {
+input::-moz-placeholder {
     font: 1rem/2.3rem 'OpenSansRegular';
     color: #969696;
-    padding-top: 15px;
 }
+
+
 
 .form-control:focus {
     border-color: #ffd20d;
@@ -628,13 +637,29 @@ section#contacts .questions p:nth-child(2) {
     font: 1rem 'OpenSansRegular';
 }
 
+section#contacts  form {
+    padding-top: 30px;
+}
+
 section#contacts  form input {
     height: 55px;
-    width: 30%;
+    width: 100%;
     color: #000;
     font: 1rem 'OpenSansRegular';
-   
 }
+
+section#contacts  form textarea {
+    font: 1rem 'OpenSansRegular';
+}
+
+textarea.form-control::-webkit-input-placeholder {
+    font: 1rem/1rem 'OpenSansRegular';
+}
+
+textarea.form-control:-moz-placeholder {
+    font: 1rem/1rem 'OpenSansRegular';
+}
+
 
 section#contacts  form button {
     background: #ffd20d;
@@ -650,6 +675,11 @@ section#contacts  form button {
 
 section#contacts form .form-group {
     margin-bottom: 20px;
+}
+
+section#contacts form .form-control:focus {
+    border: 2px solid #ffd20d;
+    box-shadow: none;
 }
 
 /* =============The End section contacts =================*/
