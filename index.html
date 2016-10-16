@@ -17,11 +17,12 @@
     <script src="js/common.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            $(".hovereffect").click(function() {
+            $(".hovereffect, p.name-product").click(function() {
                 var name_product = $(this).siblings('.name-product').text();
                 var price = $(this).siblings('.price').text();
                 var size_product = $(this).siblings('.size').find('span').text();
                 var name = $(this).attr('data-name');
+                //  $('.product-articul-val').text(nameProduct);
                 var description = $(this).siblings('.product-description').html();
                 $.fancybox.open([
                     {
@@ -88,7 +89,7 @@
                 </div>
                 <div class="overlay-sidebar" data-dismiss="overlay-sidebar"></div>
                 <ul class="sidebar">
-                    <li><a href="#main" class="active main">Главная</a></li>
+                    <li><a href="#main" class="active first main">Главная</a></li>
                     <li><a href="#why" class="why">Почему мы</a></li>
                     <li><a href="#shares" class="shares">Акции</a></li>
                     <li><a href="#products" class="products">Продукция</a></li>
@@ -185,7 +186,9 @@
                         This model was design by our master stylist and athlete Diana Tuyleneva, this jumpsuit was made
                         especially for high rate athletes and will be an amazing fit on your body as you practice all
                         sorts of physical activities. Made with top quality fabrics it's not see trought and the prints
-                        don't fade after washing Fabric: Suplex (86% de polyamide e 14% de Spandex)
+                        don't fade after washing <br>
+                        <span>Fabric: </span> <br>
+                        Suplex (86% de polyamide e 14% de Spandex)
                     </p>
                     <p class="name-product">Бразильский цветной топ</p>
                     <p class="size">Размеры:<span> S, M</span></p>

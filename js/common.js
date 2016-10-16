@@ -19,7 +19,7 @@ $(document).ready(function() {
 
     /* Anchor scroll*/
 
-    $('.navMenu ul a').click( function(){
+    $('.navMenu ul a, .head a, header a.email').click( function(){
         var scroll_el = $(this).attr('href');
         var ww=$(window).width();
         if ($(scroll_el).length != 0 && ww>991) {
@@ -46,6 +46,12 @@ $(document).ready(function() {
 
 
 
+
+
+
+
+
+
     /*  =========== Resize ============*/
     $(window).resize(function() {
 
@@ -62,7 +68,7 @@ $(document).ready(function() {
             $('.rowMenu').css({
                 'background': '#212121'});
             $('.rowMenu .logo img').css('padding-top', '17px');
-           // $('.navMenu li a.active').css('color', '#ffd20d');
+         //   $('.navMenu li a.active').css('color', '#ffd20d');
 
 
         } else {
@@ -72,10 +78,11 @@ $(document).ready(function() {
             $('.rowMenu').css({
                 'background': 'transparent'});
             $('.rowMenu .logo img').css('padding-top', '4px');
-           // $('.navMenu li a.active').css('color', '#fff');
-
-
+          //  $('.navMenu li a.active').css('color', '#fff');
         }
+
+
+
 
         // Menu Scroll
         $('.div').each(function () {
@@ -86,8 +93,7 @@ $(document).ready(function() {
                 $('.sidebar').find('a').removeClass('active');
                 $('.sidebar').find('.'+div_1+'').addClass('active');
             } else if (window_top<$('.div:nth-child(3)').offset().top-120) {
-                $('.sidebar').find('a').removeClass('active');
-                $('.sidebar a.main').addClass('active');
+
             }
             else{
                 $('.sidebar').find('.'+div_1+'').removeClass('active');
@@ -95,6 +101,25 @@ $(document).ready(function() {
             }
         });
 
+    });
+
+    $('#contacts').on('click', function () {
+        var heightDocument=$(document).height();
+        var heightContacts=$('#contacts').height();
+        $(window).scrollTop(heightDocument);
+        /*if (heightDocument>$(document).scrollTop()) {
+            $('.sidebar').find('a').removeClass('active');
+            $('.sidebar a.contacts').addClass('active');
+        }
+
+
+
+        if  ($(window).scrollTop() == heightDocument - $(window).height())
+        {
+
+        }
+
+         */
     });
 
 });

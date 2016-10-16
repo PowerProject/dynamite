@@ -182,6 +182,11 @@ header .rowMenu .navMenu li a {
 header .rowMenu .navMenu li a:active,
 header .rowMenu .navMenu li a.active {
     text-decoration: none;
+    color: #ffd20d;
+}
+
+header .rowMenu  .navMenu ul.sidebar a.first{
+    color: #fff;
 }
 
 header .rowMenu .navMenu li a:focus {
@@ -239,7 +244,7 @@ header .rowMenu .navMenu li a:hover:after {
         background: #fff;
         right: -210px;
         transition: all 1s ease-in-out;
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     header .rowMenu  .navMenu ul.sidebar li {
@@ -252,10 +257,14 @@ header .rowMenu .navMenu li a:hover:after {
         color: #000;
         text-transform: uppercase;
     }
+    header .rowMenu  .navMenu ul.sidebar a.first{
+        color: #000;
+    }
 
     header .rowMenu  .navMenu ul.sidebar li a.active {
         color: #ffd20d;
     }
+
 
     header .rowMenu .navMenu li a.active:after {
         content: '';
@@ -498,11 +507,6 @@ section#products  ul li p.name-product {
     margin-bottom: 4px;
 }
 
-section#products  ul li p.name-product:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    color: #000;
-}
 
 section#products  ul li p.size span {
     color: #000;
@@ -1085,15 +1089,22 @@ body.modal-open {
 .product-attr {
     color: #969696;
     margin: 0;
-    font: 1rem 'OpenSans';
+    font: 1rem 'OpenSansRegular';
 }
-.product-width-val, .product-price-val {
+.product-width-val  {
+    color: #fff;
+    font: 1rem 'OpenSansRegular';
+}
+
+.product-price-val {
     color: #fff;
     font: 1rem 'OpenSansExtraBold';
 }
 
 h3.product-name {
     width: 260px;
+    font: 1.25rem 'OpenSansRegular';
+    color: #fff;
 }
 
 
@@ -1104,3 +1115,13 @@ h3.product-name {
 .fancybox-lock {
     overflow: auto !important;
 }
+
+.fancybox-close {
+    top: -40px;
+    right: -60px;
+}
+
+#fancybox-thumbs {
+    margin-left: 29%;
+}
+
