@@ -225,7 +225,7 @@ header .rowMenu .navMenu li a:hover:after {
         display: block;
         border: 2px solid #ffd20d;
         border-radius: 3px;
-        background: #fffcff;
+        background: rgba(0,0,0,0.4);
     }
 
     header .rowMenu  .navMenu ul.sidebar {
@@ -237,7 +237,7 @@ header .rowMenu .navMenu li a:hover:after {
         max-width: 100%;
         box-shadow: 0 0 7px -1px rgba(0, 0, 0, 0.1);
         background: #fff;
-        right: -200px;
+        right: -210px;
         transition: all 1s ease-in-out;
         padding-left: 0px;
     }
