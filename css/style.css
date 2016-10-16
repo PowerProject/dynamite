@@ -189,6 +189,7 @@ header .rowMenu  .navMenu ul.sidebar a.first{
     color: #fff;
 }
 
+
 header .rowMenu .navMenu li a:focus {
     outline: none;
     text-decoration: none;
@@ -1061,9 +1062,10 @@ body.modal-open {
 /* ============= MODAL CLASS =================*/
 .price-pop {
     position: absolute;
-    left: 0;
-    margin-right: 20%;
     bottom: 0;
+    color: #fff;
+    font: 1.25rem 'OpenSans';
+    right: 19%;
 }
 .buy-modal {
     position: absolute;
@@ -1082,10 +1084,6 @@ body.modal-open {
     text-decoration: none;
 }
 
-.price-pop {
-    color: #fff;
-    font: 1.25rem 'OpenSans';
-}
 .product-attr {
     color: #969696;
     margin: 0;
@@ -1125,3 +1123,65 @@ h3.product-name {
     margin-left: 29%;
 }
 
+@media (min-width: 1501px) and (max-width: 1800px) {
+    .price-pop {
+        right: 13%;
+    }
+    #fancybox-thumbs {
+        margin-left: 25%;
+    }
+}
+
+@media (min-width: 1290px) and (max-width: 1500px) {
+    .price-pop {
+        right: 9%;
+    }
+    #fancybox-thumbs {
+        margin-left: 22%;
+    }
+}
+
+@media (min-width: 1050px) and (max-width: 1289px) {
+    .price-pop {
+        right: 5%;
+        font-size: 1rem;
+    }
+    #fancybox-thumbs {
+        margin-left: 21%;
+    }
+    h3.product-name {
+        font-size: 1rem;
+    }
+    .product-attr {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1049px) {
+    .price-pop {
+        right: 3%;
+        font-size: 1rem;
+    }
+    #fancybox-thumbs {
+        margin-left: 17%;
+    }
+    h3.product-name {
+        font-size: 1rem;
+        width: auto;
+    }
+    .product-attr {
+        font-size: 0.9rem;
+    }
+}
+@media (min-width: 300px) and (max-width: 991px) {
+    #fancybox-thumbs, .fancybox-title {
+        display: none;
+    }
+    .fancybox-close {
+        top: -32px;
+        right: -20px;
+    }
+    .buy-modal {
+        bottom: -12%;
+    }
+}
