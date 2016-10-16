@@ -490,6 +490,10 @@ section#products  ul li p.size {
     color: #969696;
 }
 
+section#products  ul li p.product-description {
+    display: none;
+}
+
 section#products  ul li p.name-product {
     margin-bottom: 4px;
 }
@@ -1047,4 +1051,56 @@ body.modal-open {
     #myModal  form button{
         font-size: 1rem;
     }
+}
+
+
+/* ============= MODAL CLASS =================*/
+.price-pop {
+    position: absolute;
+    left: 0;
+    margin-right: 20%;
+    bottom: 0;
+}
+.buy-modal {
+    position: absolute;
+    bottom: -10%;
+    width: 100%;
+    text-align: center;
+}
+.buy-modal a {
+    color: #000;
+    background: #ffd20d;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font: 1.125rem 'OpenSansSemiBold';
+}
+.buy-modal a:hover {
+    text-decoration: none;
+}
+
+.price-pop {
+    color: #fff;
+    font: 1.25rem 'OpenSans';
+}
+.product-attr {
+    color: #969696;
+    margin: 0;
+    font: 1rem 'OpenSans';
+}
+.product-width-val, .product-price-val {
+    color: #fff;
+    font: 1rem 'OpenSansExtraBold';
+}
+
+h3.product-name {
+    width: 260px;
+}
+
+
+.fancybox-margin {
+    margin-right: 0 !important;
+}
+
+.fancybox-lock {
+    overflow: auto !important;
 }
