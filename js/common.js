@@ -52,6 +52,12 @@ $(document).ready(function() {
 
 
 
+
+
+
+
+
+
     /*  =========== Resize ============*/
     $(window).resize(function() {
 

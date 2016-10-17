@@ -241,9 +241,11 @@ header .rowMenu .navMenu li a:hover:after {
         height: 100%;
         width: 210px;
         max-width: 100%;
-        box-shadow: 0 0 7px -1px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0 0 7px -1px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 0 7px -1px rgba(0, 0, 0, 0.1);
         background: #fff;
         right: -210px;
+        -webkit-transition: all 1s ease-in-out;
         transition: all 1s ease-in-out;
         padding-left: 0;
     }
@@ -906,7 +908,8 @@ section#contacts form .form-group {
 
 section#contacts form .form-control:focus {
     border: 2px solid #ffd20d;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 @media (max-width: 1400px) {
@@ -949,6 +952,7 @@ section#contacts form .form-control:focus {
 #myModal {
     background: rgba(24,23,23,0.9);
     padding-right: 0px !important;
+    z-index: 9999;
 }
 #myModal form input {
     height: 55px;
@@ -1021,7 +1025,8 @@ section#contacts form .form-control:focus {
 
 #myModal form .form-control:focus {
     border: 2px solid #ffd20d;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 body.modal-open {
@@ -1061,7 +1066,7 @@ body.modal-open {
 
 /* ============= MODAL CLASS =================*/
 .price-pop {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     color: #fff;
     font: 1.25rem 'OpenSans';
@@ -1178,10 +1183,33 @@ h3.product-name {
         display: none;
     }
     .fancybox-close {
-        top: -32px;
+      top: -32px;
         right: -20px;
     }
     .buy-modal {
-        bottom: -12%;
+        bottom: 0;
+        margin-bottom: -12%;
     }
+
+}
+@media (min-width: 600px) and (max-width: 991px){
+    .fancybox-wrap {
+        top: 5% !important;
+    }
+}
+@media (min-width: 300px) and (max-width: 599px){
+    .fancybox-wrap {
+        top: 10% !important;
+    }
+    .fancybox-close {
+      top: -42px;
+        right: -20px;
+    }
+    .buy-modal {
+        bottom: 0;
+        margin-bottom: -17%;
+    }
+}
+.fancybox-wrap {
+    position: fixed !important;
 }
